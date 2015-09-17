@@ -115,3 +115,7 @@ set smartcase       " ...unless we type a capital
 
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
+
+:let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+:let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+
