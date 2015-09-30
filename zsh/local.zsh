@@ -16,7 +16,7 @@ if which tmux 2>&1 >/dev/null; then
     done
 fi
 
-if [ -e "./work.sh" ]
+if [ -e "./work.zsh" ]
 then
-  source "./work.sh"
+  source "./work.zsh"
 fi
