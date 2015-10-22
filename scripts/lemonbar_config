@@ -1,0 +1,85 @@
+#!/bin/bash
+
+# Colors
+BG=$(xrdb -query | grep  background: | tail -c 8)
+FG=$(xrdb -query | grep  foreground: | tail -c 8)
+
+BLACK=$(xrdb -query | grep  color0: | tail -c 8)
+BBLACK=$(xrdb -query | grep  color8: | tail -c 8)
+
+RED=$(xrdb -query | grep  color1: | tail -c 8)
+BRED=$(xrdb -query | grep  color9: | tail -c 8)
+
+GREEN=$(xrdb -query | grep  color2: | tail -c 8)
+BGREEN=$(xrdb -query | grep  color10: | tail -c 8)
+
+YELLOW=$(xrdb -query | grep  color3: | tail -c 8)
+BYELLOW=$(xrdb -query | grep  color11: | tail -c 8)
+
+BLUE=$(xrdb -query | grep  color4: | tail -c 8)
+BBLUE=$(xrdb -query | grep  color12: | tail -c 8)
+
+MAGENTA=$(xrdb -query | grep  color5: | tail -c 8)
+BMAGENTA=$(xrdb -query | grep  color13: | tail -c 8)
+
+CYAN=$(xrdb -query | grep  color6: | tail -c 8)
+BCYAN=$(xrdb -query | grep  color14: | tail -c 8)
+
+WHITE=$(xrdb -query | grep  color7: | tail -c 8)
+BWHITE=$(xrdb -query | grep  color15: | tail -c 8)
+
+# Bar colors
+BAR_BG="${BG}"
+BAR_FG=${FG}
+FOC_FG=${BG}
+FOC_BG=${BLUE}
+ACT_FG=${FG}
+ACT_BG=${BG}
+MUSIC_FG=${BG}
+MUSIC_BG=${BLUE}
+DATE_FG=${FG}
+DATE_BG=${BAR_BG}
+DATE_ICON_FG=${BLUE}
+MAIL_ICON_FG=${BLUE}
+MEM_ICON_FG=${BLUE}
+MAIL_FG=${FG}
+MEM_FG=${FG}
+TIME_FG=${DATE_FG}
+TIME_BG=${BAR_BG}
+TIME_ICON_FG=${DATE_ICON_FG}
+VOL_FG=${DATE_FG}
+VOL_BG=${DATE_BG}
+VOL_ICON_FG=${DATE_ICON_FG}
+
+# Icons
+SEP_R=""
+SEP_L=""
+SEP_R_L=""
+SEP_L_L=""
+
+PLAY_ICON=""
+PAUSE_ICON=""
+CALENDAR_ICON=""
+TIME_ICON=""
+VOL_UP_ICON=""
+VOL_DOWN_ICON=""
+VOL_OFF_ICON=""
+WIFI_ICON=""
+MAIL_ICON=""
+MEM_ICON=""
+
+# Fonts
+FONT1="Terminess Powerline:size=12"
+FONT2="Font Awesome:size=12"
+
+# Song section max length
+SONG_MAX_LENGTH=30
+
+# gaps
+H_GAP=5
+V_GAP=5
+
+# Size
+BAR_HEIGHT=20
+#BAR_LENGTH=$(($(xrandr | grep '*' | awk -F'x' '{print $1}') - ${H_GAP} * 2))
+BAR_LENGTH=1910

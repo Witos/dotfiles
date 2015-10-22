@@ -1,3 +1,5 @@
+! rofi
+rofi.opacity: 80
 ! urxvt
 URxvt*buffered: true
 URxvt*cursorBlink: true
