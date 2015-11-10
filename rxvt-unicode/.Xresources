@@ -21,25 +21,25 @@ URxvt*scrollBar: false
 URxvt*loginShell: true
 URxvt*secondaryScroll: true # Enable Shift-PageUp/Down in screen
 URxvt*saveLines: 5000
-URxvt*termName: rxvt-unicode
-URxvt.url-launcher: /usr/bin/firefox
-URxvt.matcher.button: 1
-URxvt.keysym.Shift-Control-M:    perl:matcher:last
-URxvt.keysym.Shift-Control-L:    perl:matcher:list
-URxvt.matcher.pattern.1:  \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
-URxvt.matcher.pattern.2:  \\B(/\\S+?):(\\d+)(?=:|$)
-URxvt.matcher.launcher.2: vim +$2 $1
-URxvt.iconFile: /usr/share/icons/Faenza/apps/scalable/Terminal.svg
-URxvt.perl-ext-common: default,clipboard,vtwheel,matcher
-URxvt.iso14755: false
-URxvt.iso14755 52: false
-URxvt.keysym.Shift-Control-C: perl:clipboard:copy
-URxvt.keysym.Shift-Control-X: perl:clipboard:paste
-URxvt.clipboard.copycmd: xsel -ib
-URxvt.clipboard.pastecmd: xsel -ob
-URxvt.intensityStyles: false
-URxvt.transparent:   true
-URxvt.shading:       30
+URxvt*termName: rxvt-unicode-256color
+URxvt*.url-launcher: /usr/bin/firefox
+URxvt*.matcher.button: 1
+URxvt*.keysym.Shift-Control-M:    perl:matcher:last
+URxvt*.keysym.Shift-Control-L:    perl:matcher:list
+URxvt*.matcher.pattern.1:  \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
+URxvt*.matcher.pattern.2:  \\B(/\\S+?):(\\d+)(?=:|$)
+URxvt*.matcher.launcher.2: vim +$2 $1
+URxvt*.iconFile: /usr/share/icons/Faenza/apps/scalable/Terminal.svg
+URxvt*.perl-ext-common: default,clipboard,vtwheel,matcher
+URxvt*.iso14755: false
+URxvt*.iso14755 52: false
+URxvt*.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt*.keysym.Shift-Control-X: perl:clipboard:paste
+URxvt*.clipboard.copycmd: xsel -ib
+URxvt*.clipboard.pastecmd: xsel -ob
+URxvt*.intensityStyles: false
+! URxvt*.transparent:   true
+! URxvt*.shading:       10
 
 #define S_yellow        #b58900
 #define S_orange        #cb4b16
