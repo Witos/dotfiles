@@ -1,3 +1,5 @@
+--recurse=yes
+--exclude=.git
 
 --langdef=js
 --langmap=js:.js
