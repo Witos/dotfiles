@@ -1,3 +1,7 @@
+let g:neomake_python_pylint_maker = {
+  \ 'args': ['--disable=C0111'],
+  \ }
+
 let g:neomake_python_enabled_makers = ['pylint','flake8']
 let g:neomake_tex_enabled_makers = ['chktex']
 let g:neomake_sh_enabled_makers = ['shellcheck']
