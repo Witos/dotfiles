@@ -1,5 +1,8 @@
 --recurse=yes
 --exclude=.git
+--exclude=Debug
+--exclude=Release
+--python-kinds=-iv
 
 --langdef=js
 --langmap=js:.js
